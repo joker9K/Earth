@@ -23,5 +23,22 @@
 
     <name>Earth-project</name>
     <description>Earth-project</description>
-    
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.hadoop/zookeeper -->
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.4.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+    </dependencies>
+
+
+
 </project>
