@@ -7,6 +7,8 @@ import java.util.concurrent.CountDownLatch;
 
 /**
  * Created by zhangwt n 2018/5/17.
+ * Zookeeper的原生API建立会话是异步的
+ * 同步获取Zookeeper的子节点
  */
 public class SyncGetChildren implements Watcher{
     private static CountDownLatch latch = new CountDownLatch(1);
