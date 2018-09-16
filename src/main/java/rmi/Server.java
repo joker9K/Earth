@@ -12,7 +12,7 @@ public class Server {
     public static void main(String[] args) throws Exception {
         int port = 9527;
         String name = "BusinessDemo";
-        Business business = new BusinessImpl();
+        RMIBusiness business = new RMIBusinessImpl();
         UnicastRemoteObject.exportObject(business,port);
         Registry registry = LocateRegistry.createRegistry(1099);
         registry.rebind(name,business);

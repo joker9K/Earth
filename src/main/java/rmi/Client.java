@@ -16,7 +16,7 @@ public class Client {
         //创建BusinessDemo类的代理类，当调用时则调用localhost:1099上名称为BusinessDemo的对象,
         // 如服务器端没有对应名称的绑定，则抛出NotBandException;如抛出NotBoundException;如通信出现错误,
         // 则抛出RemoteException
-        Business business = (Business) registry.lookup(name);
+        RMIBusiness business = (RMIBusiness) registry.lookup(name);
         business.echo("RMI Test");
     }
 }
