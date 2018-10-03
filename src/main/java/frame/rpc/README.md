@@ -1,0 +1,1 @@
+rpc框架,使用netty作为网络组件,使用Protostuff实现序列化与反序列化,objenesis用来实例化java类
